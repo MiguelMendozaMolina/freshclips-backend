@@ -22,7 +22,7 @@ export class VideosService {
       return {
         name: fileName,
         path: filePath,
-        time: fs.statSync(filePath).mtime.getTime(), //mtime es la fecha de modificacion
+        time: fs.statSync(filePath).mtime.getTime(), //mtime is date of modificated
       };
     });
 
