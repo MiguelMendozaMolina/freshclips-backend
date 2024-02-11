@@ -31,7 +31,7 @@ export class VideosService {
   }
 
   // get specific video
-  getVideoByName(videoName: string){
+  getVideoByName(videoName: string) {
     const videosPath = path.join(this.videosPath, videoName);
     if (!fs.existsSync(videosPath)) {
       throw new Error('Video does not exist');
